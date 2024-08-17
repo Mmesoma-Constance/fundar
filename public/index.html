@@ -1,0 +1,990 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FUNDAR</title>
+    <link rel="stylesheet" href="output.css" />
+    <script
+      src="https://kit.fontawesome.com/5a0914105d.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <link rel="stylesheet" href="index.css" /> -->
+    <style>
+      .hero {
+        width: 100%;
+        height: 565px;
+
+        background-image: linear-gradient(
+            rgba(21, 21, 22, 0.662),
+            rgba(50, 51, 53, 0.662)
+          ),
+          url(images/image.jpg);
+        background-size: cover;
+        /* background-position: center; */
+        background-position: 8% 7%;
+        /* object-position: 8% 95%; */
+        color: #fff;
+        overflow: hidden;
+      }
+
+      @media (max-width: 768px) {
+        .hero {
+          background-position: 50% 20%;
+        }
+      }
+
+      /* .btn {
+        background: orange;
+      } */
+
+      .bgColor {
+        background-color: rgba(249, 116, 22, 0.07);
+      }
+
+      .help {
+        width: 100%;
+        height: 360px;
+
+        background-image: linear-gradient(
+            rgba(21, 21, 22, 0.662),
+            rgba(50, 51, 53, 0.662)
+          ),
+          url(images/image2.jpeg);
+        background-size: cover;
+        /* background-position: center; */
+        background-position: center;
+        /* object-position: 8% 95%; */
+        color: #fff;
+        overflow: hidden;
+      }
+      .figure:hover {
+        h2 {
+          color: #127bb9;
+        }
+        button {
+          color: #127bb9;
+          border-color: #127bb9;
+        }
+        button:hover {
+          color: white;
+          background: #127bb9;
+          border: none;
+        }
+      }
+
+      .help2 {
+        width: 100%;
+        height: 400px;
+
+        background-image: linear-gradient(
+            rgb(18, 123, 185, 0.7),
+            rgb(18, 123, 185, 0.7)
+          ),
+          url(images/image4.jpeg);
+        background-size: cover;
+        /* background-position: center; */
+        background-position: center;
+        /* object-position: 8% 95%; */
+        color: #fff;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body class="">
+    <div class="overflow-hidden bgColor">
+      <header>
+        <nav
+          class="flex justify-between px-6 md:px-32 p-4 items-center bg-[#127BB9] text-white"
+        >
+          <div class="flex gap-4 items-center">
+            <div class="pr-8 flex gap-1 items-center">
+              <img src="images/logo (1).png" alt="" class="w-10 object-cover" />
+              <h1 class="text-[23px] font-bold uppercase">Fundar</h1>
+            </div>
+            <ul class="hidden lg:flex gap-5 items-center">
+              <li class="cursor-pointer">Home</li>
+              <li class="cursor-pointer">About</li>
+              <li class="cursor-pointer">Programs</li>
+              <li class="cursor-pointer">Ways to Give</li>
+              <li class="cursor-pointer">Events</li>
+              <li class="cursor-pointer">Blog</li>
+            </ul>
+          </div>
+
+          <div class="lg:hidden">
+            <i class="fa-solid fa-bars text-2xl text-orange-500"></i>
+          </div>
+
+          <div class="hidden lg:flex flex-row-reverse gap-8">
+            <button
+              class="bg-orange-500 text-white font-bold text-[15px] p-2 px-8 rounded-lg"
+            >
+              Donate
+            </button>
+            <div class="flex gap-3 items-center">
+              <h1
+                class="p-2 bg-white text-black rounded-full faded font-bold w-fit"
+              >
+                <img src="images/phone-icon.png" alt="" class="w-6" />
+              </h1>
+              <h3 class="flex flex-col">
+                <span class="font-semibold text-xs">CALL US ANYTIME</span>
+                <p class="font-bold font-sans">+98 246 592 83167</p>
+              </h3>
+            </div>
+          </div>
+        </nav>
+
+        <!-- hero -->
+
+        <div class="hero fill-white">
+          <div
+            class="flex flex-col mt-14 md:pl-5 lg:pl-32 lg:mt-28 self-start gap-7 px-4 md:px-0"
+          >
+            <h1
+              class="textSize text-6xl md:text-7xl font-bold text-left self-start"
+            >
+              Giving Help <br />
+              To Those Who <br />
+              Need It
+            </h1>
+
+            <p class="self-start sm:w-[90%] smxl:w-[70%] lg:w-[35%]">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo
+              similique unde vero repellat aliquam dolores, necessitatibus
+            </p>
+
+            <div class="flex gap-5">
+              <button
+                class="bg-white font-bold text-[15px] text-black p-2.5 px-5 mx:px-8 rounded-lg"
+              >
+                Learn More
+              </button>
+              <button
+                class="bg-orange-500 text-white font-bold text-[15px] p-2.5 px-5 md:px-8 rounded-lg"
+              >
+                Donate Now &#8594;
+              </button>
+            </div>
+          </div>
+          <!-- 
+          <div class="custom-shape-divider-bottom-1689205976">
+            <svg
+              data-name="Layer 1"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 1200 120"
+              preserveAspectRatio="none"
+            >
+              <path
+                d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,
+                  600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+                class="shape-fill"
+              ></path>
+            </svg>
+          </div> -->
+        </div>
+      </header>
+
+      <!-- difference -->
+
+      <div
+        class="mx-5 lg:mx-32 flex flex-col justify-center items-center text-center my-16"
+      >
+        <h1 class="font-bold text-3xl text-[#127BB9]">Make a difference</h1>
+        <p class="pt-2 md:w-[50%]">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere,
+          reprehenderit. Debitis saepe veritatis
+        </p>
+
+        <div class="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <figure
+            class="figure bg-white h-fit px-5 py-8 shadow-xl rounded-2xl flex flex-col gap-1 justify-center items-center hover:bg-orange-500 hover:bg-opacity-80 transition-all hover:text-white"
+          >
+            <!-- <img src="images/image.jpg" class="w-20 pb-2" /> -->
+            <i class="fa-solid fa-shield-heart text-3xl text-[#127bb9]"></i>
+            <h2 class="font-bold text-orange-500 text-[22px]">
+              Get inspire and help
+            </h2>
+            <p class="">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            </p>
+            <button
+              class="mt-3 border border-orange-500 text-orange-500 hover:font-bold rounded-lg font-semibold text-[15px] p-1 px-5"
+            >
+              Learn More
+            </button>
+          </figure>
+
+          <figure
+            class="figure bg-white h-fit px-5 py-8 shadow-xl rounded-2xl flex flex-col gap-1 justify-center items-center hover:bg-orange-500 hover:bg-opacity-80 transition-all hover:text-white"
+          >
+            <i class="fa-solid fa-gift text-3xl text-[#127bb9]"></i>
+            <h2 class="font-bold text-orange-500 text-[22px]">
+              Send us Donations
+            </h2>
+            <p class="">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            </p>
+            <button
+              class="mt-3 border border-orange-500 text-orange-500 hover:font-bold rounded-lg font-semibold text-[15px] p-1 px-5"
+            >
+              Learn More
+            </button>
+          </figure>
+
+          <figure
+            class="figure bg-white h-fit px-5 py-8 shadow-xl rounded-2xl flex flex-col gap-1 justify-center items-center hover:bg-orange-500 hover:bg-opacity-80 transition-all hover:text-white"
+          >
+            <i class="fa-solid fa-user-plus text-3xl text-[#127bb9]"></i>
+            <h2 class="font-bold text-orange-500 text-[22px]">
+              Become a volunteer
+            </h2>
+            <p class="">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            </p>
+            <button
+              class="mt-3 border border-orange-500 text-orange-500 hover:font-bold rounded-lg font-semibold text-[15px] p-1 px-5"
+            >
+              Learn More
+            </button>
+          </figure>
+        </div>
+      </div>
+
+      <!-- about us -->
+
+      <section class="flex flex-col mx-6 md:mx-32 my-28">
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 gap-20 justify-center items-center"
+        >
+          <div class="">
+            <img
+              src="images/image1.jpeg"
+              alt=""
+              class="w-full h-[450px] object-cover"
+            />
+          </div>
+          <div class="">
+            <h4 class="font-semibold text-orange-500 uppercase">About Us</h4>
+            <h2 class="font-bold text-3xl text-[#127BB9] py-2">
+              Welcome to non-profit organization
+            </h2>
+            <p class="pt-2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. In quis
+              non aliquid iusto itaque, ullam quaerat qui voluptas totam enim.
+            </p>
+            <ul class="flex gap-4 py-4">
+              <li class="">
+                <h2 class="text-lg font-bold">
+                  <span class="pr-2">✔</span>Quick Fundraising
+                </h2>
+                <p class="">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                </p>
+              </li>
+              <li class="">
+                <h2 class="text-lg font-bold">
+                  <span class="pr-2">✔</span>Join our team
+                </h2>
+                <p class="">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                </p>
+              </li>
+            </ul>
+            <p class="flex justify-between">
+              <span class="">Donations</span><span class="">45%</span>
+            </p>
+            <div class="bg-gray-200 b h-2 w-full relative">
+              <div class="bg-[#127BB9] h-2 w-[40%] absolute z-10"></div>
+            </div>
+
+            <button
+              class="bg-orange-500 text-white font-bold text-[15px] p-2.5 px-8 rounded-lg mt-6"
+            >
+              Discover More
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- help -->
+      <section class="">
+        <div
+          class="help p-5 md:p-10 text-center flex flex-col justify-center items-center"
+        >
+          <h4 class="text-orange-500">Help Other People</h4>
+          <h1 class="text-4xl md:text-5xl font-bold md:w-[50%]">
+            Our fingerprint on the lives we have touch never fade.
+          </h1>
+
+          <div class="flex gap-6 mt-8">
+            <button
+              class="bg-orange-500 text-white font-bold text-[15px] p-2.5 px-8 rounded-lg"
+            >
+              Watch video
+            </button>
+            <!-- <img src="images/play.png" alt="" class="w-14" /> -->
+          </div>
+        </div>
+      </section>
+
+      <!-- causes -->
+
+      <section class="my-20 mx-7 md:mx-32">
+        <div class="flex flex-col justify-center items-center">
+          <h4 class="font-semibold text-orange-500 uppercase">People Causes</h4>
+          <h1 class="text-3xl font-bold text-[#127BB9]">
+            Causes we care about
+          </h1>
+          <p class="md:w-[50%] text-center">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
+            itaque iste laboriosam, provident eligendi quasi?
+          </p>
+        </div>
+        <div class="flex justify-between py-7 pt-10 w-full">
+          <ul class="flex gap-6 text-[17px] justify-center items-center">
+            <li
+              class="cursor-pointer hover:border-b-2 hover:border-orange-500 opacity-70 hover:opacity-100"
+            >
+              All
+            </li>
+            <li
+              class="cursor-pointer hover:border-b-2 hover:border-orange-500 opacity-70 hover:opacity-100"
+            >
+              Cancer
+            </li>
+            <li
+              class="cursor-pointer hover:border-b-2 hover:border-orange-500 opacity-70 hover:opacity-100"
+            >
+              Education
+            </li>
+            <li
+              class="cursor-pointer hover:border-b-2 hover:border-orange-500 opacity-70 hover:opacity-100"
+            >
+              Hunger & Nutrition
+            </li>
+            <li
+              class="cursor-pointer hover:border-b-2 hover:border-orange-500 opacity-70 hover:opacity-100"
+            >
+              Woman Rights
+            </li>
+          </ul>
+
+          <button
+            class="border border-orange-500 text-orange-500 hover:shadow-xl font-bold text-[15px] p-1.5 px-4 rounded-lg text-sm"
+          >
+            See All &#8594;
+          </button>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+          <figure class="relative">
+            <img src="images/image4.jpeg" class="w-full h-[220px]" />
+            <figcaption class="bg-white shadow-xl">
+              <div
+                class="absolute z-10 bg-orange-500 bg-opacity-85 text-white top-[152px] w-full py-2 font-bold flex gap-8 items-center"
+              >
+                <div class="pl-4">
+                  <h1 class="text-xl">$14,000</h1>
+                  <h4 class="">Raised</h4>
+                </div>
+
+                <div class="">
+                  <h1 class="text-xl">$20,000</h1>
+                  <h4 class="">Goal</h4>
+                </div>
+
+                <div class="">
+                  <h1 class="text-xl">22 days</h1>
+                  <h4 class="">Ends in</h4>
+                </div>
+              </div>
+
+              <div class="p-4 px-6">
+                <h4 class="font-bold text-orange-500 py-2 text-[20px]">
+                  Help for children education
+                </h4>
+                <p class="">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Aliquam autem eligendi
+                </p>
+                <button
+                  class="border border-orange-500 text-orange-500 hover:shadow-xl font-bold text-[15px] p-2 px-6 rounded-lg text-sm mt-6 mb-4"
+                >
+                  Donate Now
+                </button>
+              </div>
+            </figcaption>
+          </figure>
+
+          <figure class="relative">
+            <img src="images/image5.jpeg" class="h-[220px]" />
+            <figcaption class="bg-white shadow-xl">
+              <div
+                class="absolute z-10 bg-orange-500 bg-opacity-85 text-white top-[152px] w-full py-2 font-bold flex gap-8 items-center"
+              >
+                <div class="pl-4">
+                  <h1 class="text-xl">$14,000</h1>
+                  <h4 class="">Raised</h4>
+                </div>
+
+                <div class="">
+                  <h1 class="text-xl">$30,000</h1>
+                  <h4 class="">Goal</h4>
+                </div>
+
+                <div class="">
+                  <h1 class="text-xl">22 days</h1>
+                  <h4 class="">Ends in</h4>
+                </div>
+              </div>
+
+              <div class="p-4 px-6">
+                <h4 class="font-bold text-orange-500 py-2 text-[20px]">
+                  Help for children education
+                </h4>
+                <p class="">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Aliquam autem eligendi
+                </p>
+                <button
+                  class="border border-orange-500 text-orange-500 hover:shadow-xl font-bold text-[15px] p-2 px-6 rounded-lg text-sm mt-6 mb-4"
+                >
+                  Donate Now
+                </button>
+              </div>
+            </figcaption>
+          </figure>
+
+          <figure class="relative">
+            <img src="images/image6.jpeg" class="w-full h-[220px]" />
+            <figcaption class="bg-white shadow-xl">
+              <div
+                class="absolute z-10 bg-orange-500 bg-opacity-85 text-white top-[152px] w-full py-2 font-bold flex gap-8 items-center"
+              >
+                <div class="pl-4">
+                  <h1 class="text-xl">$19,000</h1>
+                  <h4 class="">Raised</h4>
+                </div>
+
+                <div class="">
+                  <h1 class="text-xl">$40,000</h1>
+                  <h4 class="">Goal</h4>
+                </div>
+
+                <div class="">
+                  <h1 class="text-xl">28 days</h1>
+                  <h4 class="">Ends in</h4>
+                </div>
+              </div>
+
+              <div class="p-4 px-6">
+                <h4 class="font-bold text-orange-500 py-2 text-[20px]">
+                  Help for children education
+                </h4>
+                <p class="">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Aliquam autem eligendi
+                </p>
+                <button
+                  class="border border-orange-500 text-orange-500 hover:shadow-xl font-bold text-[15px] p-2 px-6 rounded-lg text-sm mt-6 mb-4"
+                >
+                  Donate Now
+                </button>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- numbers -->
+
+      <section class="flex flex-col mx-6 md:mx-32 my-28">
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 gap-20 justify-center items-center"
+        >
+          <div class="">
+            <h4 class="font-semibold text-orange-500 uppercase">Our Numbers</h4>
+            <h2 class="font-bold text-3xl text-[#127BB9] py-2">
+              We're making an impact
+            </h2>
+            <p class="pt-2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. In quis
+              non aliquid iusto itaque, ullam quaerat qui voluptas totam enim.
+            </p>
+            <ul class="grid grid-cols-2 gap-6 py-4">
+              <li class="">
+                <h2 class="text-3xl font-bold text-orange-500">100K</h2>
+                <p class="">sit amet consectetur adipisicing elit.</p>
+              </li>
+              <li class="">
+                <h2 class="text-3xl text-orange-500 font-bold">300+</h2>
+                <p class="">sit amet consectetur adipisicing elit.</p>
+              </li>
+
+              <li class="">
+                <h2 class="text-3xl text-orange-500 font-bold">140K</h2>
+                <p class="">
+                  Lorem dolor sit amet consectetur adipisicing elit.
+                </p>
+              </li>
+              <li class="">
+                <h2 class="text-3xl text-orange-500 font-bold">150+</h2>
+                <p class="">
+                  Lorem dolor sit amet consectetur adipisicing elit.
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div class="">
+            <img
+              src="images/image7.png"
+              alt=""
+              class="w-full h-[450px] object-cover"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!--  -->
+
+      <section class="">
+        <div
+          class="help2 p-5 md:p-10 text-center flex flex-col justify-center items-center"
+        >
+          <h4 class="text-orange-500">Help Other People</h4>
+          <h1 class="text-4xl md:text-5xl font-bold md:w-[50%]">
+            No One Has Ever Become Poor From Giving
+          </h1>
+
+          <div class="flex gap-6 mt-8">
+            <button
+              class="bg-orange-500 text-white font-bold text-[15px] p-2.5 px-8 rounded-lg"
+            >
+              Start Donating
+            </button>
+            <!-- <img src="images/play.png" alt="" class="w-14" /> -->
+          </div>
+        </div>
+      </section>
+
+      <!-- review -->
+
+      <section class="my-20 mx-7 md:mx-32">
+        <div class="flex flex-col justify-center items-center">
+          <h4 class="font-semibold text-orange-500 uppercase">
+            Our Testimonials
+          </h4>
+          <h1 class="text-3xl font-bold text-[#127BB9]">
+            What they are talking about Fundar
+          </h1>
+          <p class="md:w-[50%] text-center">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
+            itaque iste laboriosam, provident eligendi quasi?
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
+          <figure
+            class="bg-white shadow-xl flex flex-col items-center relative"
+          >
+            <img
+              src="images/image.jpg"
+              class="w-14 h-16 object-cover rounded-b-full"
+            />
+            <figcaption class="flex items-center flex-col">
+              <div
+                class="absolute z-10 bg-orange-500 p-2 w-fit rounded-full top-10"
+              >
+                <i class="fa-solid fa-quote-left text-white"></i>
+              </div>
+              <div class="py-6 px-10 text-center">
+                <h2 class="leading-loose">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Sint, nam! Earum voluptas doloremque magnam odio totam nulla
+                  obcaecati illum vitae.
+                </h2>
+                <p class="text-orange-500 text-lg font-bold pt-10">
+                  Alex Cooper
+                </p>
+                <p class="font-semibold">Customer</p>
+              </div>
+            </figcaption>
+          </figure>
+
+          <figure
+            class="bg-white shadow-xl flex flex-col items-center relative"
+          >
+            <img
+              src="images/image.jpg"
+              class="w-14 h-16 object-cover rounded-b-full"
+            />
+            <figcaption class="flex items-center flex-col">
+              <div
+                class="absolute z-10 bg-orange-500 p-2 w-fit rounded-full top-10"
+              >
+                <i class="fa-solid fa-quote-left text-white"></i>
+              </div>
+              <div class="py-6 px-10 text-center">
+                <h2 class="leading-loose">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Sint, nam! Earum voluptas doloremque magnam odio totam nulla
+                  obcaecati illum vitae.
+                </h2>
+                <p class="text-orange-500 text-lg font-bold pt-10">
+                  Alex Cooper
+                </p>
+                <p class="font-semibold">Customer</p>
+              </div>
+            </figcaption>
+          </figure>
+
+          <figure
+            class="bg-white shadow-xl flex flex-col items-center relative"
+          >
+            <img
+              src="images/image.jpg"
+              class="w-14 h-16 object-cover rounded-b-full"
+            />
+            <figcaption class="flex items-center flex-col">
+              <div
+                class="absolute z-10 bg-orange-500 p-2 w-fit rounded-full top-10"
+              >
+                <i class="fa-solid fa-quote-left text-white"></i>
+              </div>
+              <div class="py-6 px-10 text-center">
+                <h2 class="leading-loose">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Sint, nam! Earum voluptas doloremque magnam odio totam nulla
+                  obcaecati illum vitae.
+                </h2>
+                <p class="text-orange-500 text-lg font-bold pt-10">
+                  Alex Cooper
+                </p>
+                <p class="font-semibold">Customer</p>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- images -->
+
+      <section class="md:mx-32 mb-10">
+        <div class="grid grid-cols-5 gap-3">
+          <img src="images/image1.jpeg" class="h-60 object-cover" />
+          <img src="images/image.jpg" class="h-60 object-cover" />
+          <img src="images/image2.jpeg" class="h-60 object-cover" />
+          <img src="images/image6.jpeg" class="h-60 object-cover" />
+          <img src="images/image4.jpeg" class="h-60 object-cover" />
+        </div>
+      </section>
+
+      <!-- events/news -->
+
+      <section class="mx-5 md:mx-32 my-20">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-28">
+          <div class="">
+            <h4 class="font-semibold text-orange-500 uppercase">
+              Latest Event List
+            </h4>
+            <div class="flex justify-between">
+              <h1 class="text-2xl md:text-3xl font-bold text-[#127BB9]">
+                Upcoming Events
+              </h1>
+              <h3
+                class="border-b-2 border-orange-500 w-fit cursor-pointer hover:font-bold text-sm md:text-base"
+              >
+                All Events &#8594;
+              </h3>
+            </div>
+
+            <div class="flex flex-col gap-4">
+              <figure class="flex gap-4 mt-6">
+                <img src="images/image2.jpeg" class="w-20 object-cover" />
+                <figcaption>
+                  <h1 class="font-bold text-lg">Funding for Food</h1>
+                  <h4 class="text-sm">
+                    <i class="fa-regular fa-calendar"></i> 25/09/2024 | 3:00PM
+                  </h4>
+                  <p class="text-sm opacity-70 pt-1">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Magnam voluptates voluptate
+                  </p>
+                </figcaption>
+              </figure>
+
+              <figure class="flex gap-4 mt-6">
+                <img src="images/image5.jpeg" class="w-20 object-cover" />
+                <figcaption>
+                  <h1 class="font-bold text-lg">Education for children</h1>
+                  <h4 class="text-sm">
+                    <i class="fa-regular fa-calendar"></i> 25/09/2024 | 3:00PM
+                  </h4>
+                  <p class="text-sm opacity-70 pt-1">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Magnam voluptates voluptate
+                  </p>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+          <div class="">
+            <h4 class="font-semibold text-orange-500 uppercase">Our Blog</h4>
+            <div class="flex justify-between">
+              <h1 class="text-2xl md:text-3xl font-bold text-[rgb(18,123,185)]">
+                Latest News
+              </h1>
+              <h3
+                class="border-b-2 border-orange-500 w-fit cursor-pointer hover:font-bold text-sm md:text-base"
+              >
+                All News &#8594;
+              </h3>
+            </div>
+
+            <div class="flex flex-col gap-4">
+              <figure class="flex gap-4 mt-6 cursor-pointer">
+                <figcaption>
+                  <h1 class="font-bold text-lg">
+                    Why it is important to support them
+                  </h1>
+                  <h4 class="text-sm">
+                    <i class="fa-regular fa-calendar"></i> 25/09/2024 | 3:00PM
+                  </h4>
+                  <p class="text-sm opacity-70 pt-1">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Esse sed mollitia nostrum provident, sint, deserunt vero
+                    repellat magni sunt velit nobis optio reiciendis quidem
+                    corporis hic, temporibus quos consectetur quo.
+                  </p>
+                </figcaption>
+              </figure>
+
+              <figure class="flex gap-4 mt-6 cursor-pointer">
+                <figcaption>
+                  <h1 class="font-bold text-lg">
+                    Announcement: sit amet consectetur adipisicing
+                  </h1>
+                  <h4 class="text-sm">
+                    <i class="fa-regular fa-calendar"></i> 25/09/2024 | 3:00PM
+                  </h4>
+                  <p class="text-sm opacity-70 pt-1">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Esse sed mollitia nostrum provident, sint, deserunt vero
+                    repellat magni sunt velit nobis optio reiciendis quidem
+                    corporis hic, temporibus quos consectetur quo.
+                  </p>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- join -->
+
+      <section class="bg-[#127BB9] bg-opacity-40">
+        <div
+          class="p-6 md:px-32 flex flex-col md:flex-row md:justify-between items-center"
+        >
+          <div class="font-bold text-2xl md:w-[40%] text-white">
+            Join you hand with us for a better life and future
+          </div>
+          <button
+            class="self-start md:self-auto mt-6 md:mt-0 bg-orange-500 text-white font-bold text-[15px] p-3 px-8 rounded-lg"
+          >
+            Donate
+          </button>
+        </div>
+      </section>
+
+      <!-- footer -->
+
+      <footer class="bg-[#127BB9]">
+        <div class="pt-10 pb-3 mx-5 md:mx-32">
+          <div
+            class="mb-6 flex flex-col md:flex-row justify-between mx-auto gap-4"
+          >
+            <span class="w-80">
+              <div class="pr-8 flex gap-1 items-center">
+                <img
+                  src="images/logo (2).png"
+                  alt=""
+                  class="w-10 object-cover"
+                />
+                <h1 class="text-[23px] font-bold uppercase text-white">
+                  Fundar
+                </h1>
+              </div>
+
+              <p class="py-4 text-[15px] text-gray-300">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
+                adipisc deserunt fugiat impedit!
+              </p>
+              <p class="text-gray-300 flex items-center gap-3">
+                <i class="fa-solid fa-envelope text-orange-500"></i>
+                <span class=""> fundar@company.com</span>
+              </p>
+              <p class="text-gray-300 flex items-center gap-3">
+                <i class="fa-solid fa-phone-volume text-orange-500"></i>
+                <span class=""> + 99 (007) 867 473</span>
+              </p>
+            </span>
+
+            <span class="">
+              <h1
+                class="uppercase text-sm font-bold tracking-wide py-1 md:py-2 mb-3 text-orange-500"
+              >
+                Navigation
+              </h1>
+              <ul class="flex flex-col gap-2">
+                <li
+                  class="hover:underline cursor-pointer text-white opacity-75 text-[15px] hover:text-white"
+                >
+                  Recent causes
+                </li>
+                <li
+                  class="hover:underline cursor-pointer text-white opacity-75 text-[15px] hover:text-white"
+                >
+                  About us
+                </li>
+                <li
+                  class="hover:underline cursor-pointer text-white opacity-75 text-[15px] hover:text-white"
+                >
+                  Donation
+                </li>
+                <li
+                  class="hover:underline cursor-pointer text-white opacity-75 text-[15px] hover:text-white"
+                >
+                  Latest news
+                </li>
+                <li
+                  class="hover:underline cursor-pointer text-white opacity-75 text-[15px] hover:text-white"
+                >
+                  Contact us
+                </li>
+              </ul>
+            </span>
+
+            <span class="">
+              <h1
+                class="uppercase text-sm font-bold tracking-wide py-1 md:py-2 mb-3 text-orange-500"
+              >
+                Campaigns
+              </h1>
+              <ul class="flex flex-col gap-2">
+                <li
+                  class="hover:underline cursor-pointer text-white opacity-75 text-[15px] hover:text-white"
+                >
+                  Child Cancer
+                </li>
+                <li
+                  class="hover:underline cursor-pointer text-white opacity-75 text-[15px] hover:text-white"
+                >
+                  Differently disabled
+                </li>
+                <li
+                  class="hover:underline cursor-pointer text-white opacity-75 text-[15px] hover:text-white"
+                >
+                  Clean water
+                </li>
+                <li
+                  class="hover:underline cursor-pointer text-white opacity-75 text-[15px] hover:text-white"
+                >
+                  Start fundraising
+                </li>
+                <li
+                  class="hover:underline cursor-pointer text-white opacity-75 text-[15px] hover:text-white"
+                >
+                  Give education
+                </li>
+              </ul>
+            </span>
+
+            <span class="">
+              <h1
+                class="uppercase text-sm font-bold tracking-wide py-1 md:py-2 mb-3 text-orange-500"
+              >
+                Our Newsletter
+              </h1>
+              <ul class="flex flex-col gap-2 w-80">
+                <li class="text-white opacity-75 text-[15px] hover:text-white">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Minima, repellat?
+                </li>
+                <li class="my-3">
+                  <input
+                    type="email"
+                    class="w-80 p-2 px-6 bg-transparent border text-white outline-none"
+                    placeholder="Your email"
+                  />
+                </li>
+                <li class="">
+                  <button
+                    class="bg-orange-500 text-white font-bold text-[15px] p-2 px-8 rounded-lg"
+                  >
+                    Subscribe &#8594;
+                  </button>
+                </li>
+              </ul>
+            </span>
+          </div>
+
+          <div
+            class="flex flex-col-reverse md:flex-row justify-between w-full items-center mx-auto my-3 p-5"
+          >
+            <div class="text-sm pt-3 text-gray-200">
+              &#169; Copywright. All rights reserved
+            </div>
+
+            <div class="">
+              <ul class="flex flex-row gap-3">
+                <li
+                  class="px-3.5 py-2 bg-orange-500 bg-opacity-15 flex justify-center items-center text-orange-500 hover:text-white cursor-pointer hover:shadow-xl rounded-full"
+                >
+                  <i class="fa-brands fa-facebook-f"></i>
+                </li>
+                <li
+                  class="px-3.5 py-2 bg-orange-500 bg-opacity-15 flex justify-center items-center text-orange-500 hover:text-white cursor-pointer hover:shadow-xl rounded-full"
+                >
+                  <i class="fa-brands fa-whatsapp"></i>
+                </li>
+                <li
+                  class="px-3.5 py-2 bg-orange-500 bg-opacity-15 flex justify-center items-center text-orange-500 hover:text-white cursor-pointer hover:shadow-xl rounded-full"
+                >
+                  <i class="fa-brands fa-twitter"></i>
+                </li>
+                <li
+                  class="px-3.5 py-2 bg-orange-500 bg-opacity-15 flex justify-center items-center text-orange-500 hover:text-white cursor-pointer hover:shadow-xl rounded-full"
+                >
+                  <i class="fa-brands fa-instagram"></i>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <!-- -------------------------- -->
+    </div>
+
+    <!-- <script>
+      let array = [
+        "Feeling bloated",
+        "Feeling low",
+        "Having high sex drive",
+        "Feeling tired",
+        "Having mood swings",
+        "Having cramps",
+      ];
+      let random = Math.trunc(Math.random() * array.length);
+      // console.log(random);
+      let mood;
+      for (let i = 0; i < array.length; i++) {
+        mood = array[random];
+      }
+      let msg = `You might be ${mood} today! See why `;
+      console.log(msg);
+    </script> -->
+  </body>
+</html>
