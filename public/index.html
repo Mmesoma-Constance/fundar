@@ -12,7 +12,6 @@
     <style>
       .hero {
         width: 100%;
-        height: 565px;
 
         background-image: linear-gradient(
             rgba(21, 21, 22, 0.662),
@@ -94,14 +93,14 @@
     <div class="overflow-hidden bgColor">
       <header>
         <nav
-          class="flex justify-between px-6 md:px-32 p-4 items-center bg-[#127BB9] text-white"
+          class="flex justify-between px-6 md:px-32 lgsm:px-6 lg:px-32 p-4 items-center bg-[#127BB9] text-white"
         >
           <div class="flex gap-4 items-center">
             <div class="pr-8 flex gap-1 items-center">
               <img src="images/logo (1).png" alt="" class="w-10 object-cover" />
               <h1 class="text-[23px] font-bold uppercase">Fundar</h1>
             </div>
-            <ul class="hidden lg:flex gap-5 items-center">
+            <ul class="hidden lgsm:flex gap-5 items-center">
               <li class="cursor-pointer">Home</li>
               <li class="cursor-pointer">About</li>
               <li class="cursor-pointer">Programs</li>
@@ -111,11 +110,11 @@
             </ul>
           </div>
 
-          <div class="lg:hidden">
+          <div class="lgsm:hidden">
             <i class="fa-solid fa-bars text-2xl text-orange-500"></i>
           </div>
 
-          <div class="hidden lg:flex flex-row-reverse gap-8">
+          <div class="hidden lgsm:flex flex-row-reverse gap-8">
             <button
               class="bg-orange-500 text-white font-bold text-[15px] p-2 px-8 rounded-lg"
             >
@@ -137,9 +136,9 @@
 
         <!-- hero -->
 
-        <div class="hero fill-white">
+        <div class="hero h-screen sm:h-[565px]">
           <div
-            class="flex flex-col mt-14 md:pl-5 lg:pl-32 lg:mt-28 self-start gap-7 px-4 md:px-0"
+            class="flex flex-col mt-20 md:pl-5 lgsm:pl-20 lgsm:mt-20 lg:pl-32 lg:mt-28 self-start gap-7 px-4 md:px-0"
           >
             <h1
               class="textSize text-6xl md:text-7xl font-bold text-left self-start"
@@ -149,7 +148,7 @@
               Need It
             </h1>
 
-            <p class="self-start sm:w-[90%] smxl:w-[70%] lg:w-[35%]">
+            <p class="self-start sm:w-[60%] smxl:w-[50%] lg:w-[35%]">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo
               similique unde vero repellat aliquam dolores, necessitatibus
             </p>
@@ -191,7 +190,7 @@
         class="mx-5 lg:mx-32 flex flex-col justify-center items-center text-center my-16"
       >
         <h1 class="font-bold text-3xl text-[#127BB9]">Make a difference</h1>
-        <p class="pt-2 md:w-[50%]">
+        <p class="pt-2 sm:w-[80%] md:w-[50%]">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere,
           reprehenderit. Debitis saepe veritatis
         </p>
@@ -220,7 +219,24 @@
           >
             <i class="fa-solid fa-gift text-3xl text-[#127bb9]"></i>
             <h2 class="font-bold text-orange-500 text-[22px]">
-              Send us Donations
+              Send us Donation
+            </h2>
+            <p class="">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            </p>
+            <button
+              class="mt-3 border border-orange-500 text-orange-500 hover:font-bold rounded-lg font-semibold text-[15px] p-1 px-5"
+            >
+              Learn More
+            </button>
+          </figure>
+
+          <figure
+            class="figure bg-white h-fit px-5 py-8 shadow-xl rounded-2xl lg:hidden flex flex-col gap-1 justify-center items-center hover:bg-orange-500 hover:bg-opacity-80 transition-all hover:text-white"
+          >
+            <i class="fa-solid fa-user-plus text-3xl text-[#127bb9]"></i>
+            <h2 class="font-bold text-orange-500 text-[22px]">
+              Social service
             </h2>
             <p class="">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -235,9 +251,10 @@
           <figure
             class="figure bg-white h-fit px-5 py-8 shadow-xl rounded-2xl flex flex-col gap-1 justify-center items-center hover:bg-orange-500 hover:bg-opacity-80 transition-all hover:text-white"
           >
-            <i class="fa-solid fa-user-plus text-3xl text-[#127bb9]"></i>
+            <!-- <img src="images/image.jpg" class="w-20 pb-2" /> -->
+            <i class="fa-solid fa-shield-heart text-3xl text-[#127bb9]"></i>
             <h2 class="font-bold text-orange-500 text-[22px]">
-              Become a volunteer
+              Get inspire and help
             </h2>
             <p class="">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -253,7 +270,10 @@
 
       <!-- about us -->
 
-      <section class="flex flex-col mx-6 md:mx-32 my-28">
+      <section
+        mdsm:mx-16
+        class="flex flex-col mx-6 sm:mx-24 smxl:mx-28 md:mx-10 lgsm:mx-28 lg:mx-32 my-28"
+      >
         <div
           class="grid grid-cols-1 md:grid-cols-2 gap-20 justify-center items-center"
         >
@@ -313,7 +333,7 @@
           class="help p-5 md:p-10 text-center flex flex-col justify-center items-center"
         >
           <h4 class="text-orange-500">Help Other People</h4>
-          <h1 class="text-4xl md:text-5xl font-bold md:w-[50%]">
+          <h1 class="text-4xl md:text-5xl font-bold lg:w-[50%]">
             Our fingerprint on the lives we have touch never fade.
           </h1>
 
@@ -330,7 +350,9 @@
 
       <!-- causes -->
 
-      <section class="my-20 mx-7 md:mx-32">
+      <section
+        class="my-20 mx-7 sm:mx-24 smxl:mx-28 md:mx-10 mdsm:mx-16 lgsm:mx-24 lg:mx-32"
+      >
         <div class="flex flex-col justify-center items-center">
           <h4 class="font-semibold text-orange-500 uppercase">People Causes</h4>
           <h1 class="text-3xl font-bold text-[#127BB9]">
@@ -342,7 +364,7 @@
           </p>
         </div>
         <div class="flex justify-between py-7 pt-10 w-full">
-          <ul class="flex gap-6 text-[17px] justify-center items-center">
+          <!-- <ul class="flex gap-6 text-[17px] justify-center items-center">
             <li
               class="cursor-pointer hover:border-b-2 hover:border-orange-500 opacity-70 hover:opacity-100"
             >
@@ -368,19 +390,22 @@
             >
               Woman Rights
             </li>
-          </ul>
+          </ul> -->
 
-          <button
+          <!-- <button
             class="border border-orange-500 text-orange-500 hover:shadow-xl font-bold text-[15px] p-1.5 px-4 rounded-lg text-sm"
           >
             See All &#8594;
-          </button>
+          </button> -->
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
           <figure class="relative">
-            <img src="images/image4.jpeg" class="w-full h-[220px]" />
-            <figcaption class="bg-white shadow-xl">
+            <img
+              src="images/image4.jpeg"
+              class="object-cover w-full h-[220px]"
+            />
+            <figcaption class="bg-white shadow-xl w-full">
               <div
                 class="absolute z-10 bg-orange-500 bg-opacity-85 text-white top-[152px] w-full py-2 font-bold flex gap-8 items-center"
               >
@@ -418,7 +443,10 @@
           </figure>
 
           <figure class="relative">
-            <img src="images/image5.jpeg" class="h-[220px]" />
+            <img
+              src="images/image5.jpeg"
+              class="object-cover w-full h-[220px]"
+            />
             <figcaption class="bg-white shadow-xl">
               <div
                 class="absolute z-10 bg-orange-500 bg-opacity-85 text-white top-[152px] w-full py-2 font-bold flex gap-8 items-center"
@@ -441,7 +469,7 @@
 
               <div class="p-4 px-6">
                 <h4 class="font-bold text-orange-500 py-2 text-[20px]">
-                  Help for children education
+                  Help children Cancer fighters
                 </h4>
                 <p class="">
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -457,7 +485,10 @@
           </figure>
 
           <figure class="relative">
-            <img src="images/image6.jpeg" class="w-full h-[220px]" />
+            <img
+              src="images/image6.jpeg"
+              class="object-cover w-full h-[220px]"
+            />
             <figcaption class="bg-white shadow-xl">
               <div
                 class="absolute z-10 bg-orange-500 bg-opacity-85 text-white top-[152px] w-full py-2 font-bold flex gap-8 items-center"
@@ -494,12 +525,56 @@
               </div>
             </figcaption>
           </figure>
+
+          <figure class="lg:hidden relative">
+            <img
+              src="images/image5.jpeg"
+              class="object-cover w-full h-[220px]"
+            />
+            <figcaption class="bg-white shadow-xl">
+              <div
+                class="absolute z-10 bg-orange-500 bg-opacity-85 text-white top-[152px] w-full py-2 font-bold flex gap-8 items-center"
+              >
+                <div class="pl-4">
+                  <h1 class="text-xl">$14,000</h1>
+                  <h4 class="">Raised</h4>
+                </div>
+
+                <div class="">
+                  <h1 class="text-xl">$30,000</h1>
+                  <h4 class="">Goal</h4>
+                </div>
+
+                <div class="">
+                  <h1 class="text-xl">22 days</h1>
+                  <h4 class="">Ends in</h4>
+                </div>
+              </div>
+
+              <div class="p-4 px-6">
+                <h4 class="font-bold text-orange-500 py-2 text-[20px]">
+                  Help children Cancer fighters
+                </h4>
+                <p class="">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Aliquam autem eligendi
+                </p>
+                <button
+                  class="border border-orange-500 text-orange-500 hover:shadow-xl font-bold text-[15px] p-2 px-6 rounded-lg text-sm mt-6 mb-4"
+                >
+                  Donate Now
+                </button>
+              </div>
+            </figcaption>
+          </figure>
         </div>
       </section>
 
       <!-- numbers -->
 
-      <section class="flex flex-col mx-6 md:mx-32 my-28">
+      <section
+        class="flex flex-col mx-6 sm:mx-24 smxl:mx-28 md:mx-10 mdsm:mx-16 lgsm:mx-28 lg:mx-32 my-20 md:my-28"
+      >
         <div
           class="grid grid-cols-1 md:grid-cols-2 gap-20 justify-center items-center"
         >
@@ -536,7 +611,7 @@
               </li>
             </ul>
           </div>
-          <div class="">
+          <div class="hidden md:flex">
             <img
               src="images/image7.png"
               alt=""
@@ -550,10 +625,10 @@
 
       <section class="">
         <div
-          class="help2 p-5 md:p-10 text-center flex flex-col justify-center items-center"
+          class="help2 p-5 lg:p-10 text-center flex flex-col justify-center items-center"
         >
           <h4 class="text-orange-500">Help Other People</h4>
-          <h1 class="text-4xl md:text-5xl font-bold md:w-[50%]">
+          <h1 class="text-4xl md:text-5xl font-bold lg:w-[50%]">
             No One Has Ever Become Poor From Giving
           </h1>
 
@@ -570,12 +645,14 @@
 
       <!-- review -->
 
-      <section class="my-20 mx-7 md:mx-32">
+      <section
+        class="my-20 mx-7 sm:mx-24 smxl:mx-28 md:mx-10 mdsm:mx-16 lg:mx-32"
+      >
         <div class="flex flex-col justify-center items-center">
           <h4 class="font-semibold text-orange-500 uppercase">
             Our Testimonials
           </h4>
-          <h1 class="text-3xl font-bold text-[#127BB9]">
+          <h1 class="text-3xl font-bold text-[#127BB9] text-center">
             What they are talking about Fundar
           </h1>
           <p class="md:w-[50%] text-center">
@@ -589,7 +666,7 @@
             class="bg-white shadow-xl flex flex-col items-center relative"
           >
             <img
-              src="images/image.jpg"
+              src="images/people (5).jpg"
               class="w-14 h-16 object-cover rounded-b-full"
             />
             <figcaption class="flex items-center flex-col">
@@ -616,7 +693,7 @@
             class="bg-white shadow-xl flex flex-col items-center relative"
           >
             <img
-              src="images/image.jpg"
+              src="images/people (6).jpg"
               class="w-14 h-16 object-cover rounded-b-full"
             />
             <figcaption class="flex items-center flex-col">
@@ -643,7 +720,34 @@
             class="bg-white shadow-xl flex flex-col items-center relative"
           >
             <img
-              src="images/image.jpg"
+              src="images/people (7).png"
+              class="w-14 h-16 object-cover rounded-b-full"
+            />
+            <figcaption class="flex items-center flex-col">
+              <div
+                class="absolute z-10 bg-orange-500 p-2 w-fit rounded-full top-10"
+              >
+                <i class="fa-solid fa-quote-left text-white"></i>
+              </div>
+              <div class="py-6 px-10 text-center">
+                <h2 class="leading-loose">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Sint, nam! Earum voluptas doloremque magnam odio totam nulla
+                  obcaecati illum vitae.
+                </h2>
+                <p class="text-orange-500 text-lg font-bold pt-10">
+                  Alex Cooper
+                </p>
+                <p class="font-semibold">Customer</p>
+              </div>
+            </figcaption>
+          </figure>
+
+          <figure
+            class="bg-white shadow-xl lg:hidden flex flex-col items-center relative"
+          >
+            <img
+              src="images/people (5).jpg"
               class="w-14 h-16 object-cover rounded-b-full"
             />
             <figcaption class="flex items-center flex-col">
@@ -670,20 +774,35 @@
 
       <!-- images -->
 
-      <section class="md:mx-32 mb-10">
-        <div class="grid grid-cols-5 gap-3">
-          <img src="images/image1.jpeg" class="h-60 object-cover" />
-          <img src="images/image.jpg" class="h-60 object-cover" />
-          <img src="images/image2.jpeg" class="h-60 object-cover" />
-          <img src="images/image6.jpeg" class="h-60 object-cover" />
-          <img src="images/image4.jpeg" class="h-60 object-cover" />
+      <section
+        class="mx-5 sm:mx-24 smxl:mx-28 md:mx-10 mdsm:mx-16 lgsm:mx-28 lg:mx-32 mb-10"
+      >
+        <div class="grid grid-cols-4 gap-3">
+          <img
+            src="images/image1.jpeg"
+            class="h-28 sm:h-40 md:h-60 object-cover"
+          />
+          <img
+            src="images/image.jpg"
+            class="h-28 sm:h-40 md:h-60 object-cover"
+          />
+          <img
+            src="images/image2.jpeg"
+            class="h-28 sm:h-40 md:h-60 object-cover"
+          />
+          <img
+            src="images/image6.jpeg"
+            class="h-28 sm:h-40 md:h-60 object-cover"
+          />
         </div>
       </section>
 
       <!-- events/news -->
 
-      <section class="mx-5 md:mx-32 my-20">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-28">
+      <section
+        class="mx-5 sm:mx-24 smxl:mx-28 md:mx-10 mdsm:mx-16 lgsm:mx-28 lg:mx-32 my-20"
+      >
+        <div class="grid grid-cols-1 mdsm:grid-cols-2 gap-28">
           <div class="">
             <h4 class="font-semibold text-orange-500 uppercase">
               Latest Event List
@@ -693,7 +812,7 @@
                 Upcoming Events
               </h1>
               <h3
-                class="border-b-2 border-orange-500 w-fit cursor-pointer hover:font-bold text-sm md:text-base"
+                class="border-b-2 border-orange-500 w-fit cursor-pointer hover:font-bold text-sm lg:text-base"
               >
                 All Events &#8594;
               </h3>
@@ -701,7 +820,7 @@
 
             <div class="flex flex-col gap-4">
               <figure class="flex gap-4 mt-6">
-                <img src="images/image2.jpeg" class="w-20 object-cover" />
+                <img src="images/image5.jpeg" class="w-20 object-cover" />
                 <figcaption>
                   <h1 class="font-bold text-lg">Funding for Food</h1>
                   <h4 class="text-sm">
@@ -715,7 +834,7 @@
               </figure>
 
               <figure class="flex gap-4 mt-6">
-                <img src="images/image5.jpeg" class="w-20 object-cover" />
+                <img src="images/image4.jpeg" class="w-20 object-cover" />
                 <figcaption>
                   <h1 class="font-bold text-lg">Education for children</h1>
                   <h4 class="text-sm">
@@ -736,7 +855,7 @@
                 Latest News
               </h1>
               <h3
-                class="border-b-2 border-orange-500 w-fit cursor-pointer hover:font-bold text-sm md:text-base"
+                class="border-b-2 border-orange-500 w-fit cursor-pointer hover:font-bold text-sm lg:text-base"
               >
                 All News &#8594;
               </h3>
@@ -785,10 +904,10 @@
 
       <section class="bg-[#127BB9] bg-opacity-40">
         <div
-          class="p-6 md:px-32 flex flex-col md:flex-row md:justify-between items-center"
+          class="p-6 sm:px-24 px-10 lg:px-32 flex flex-col md:flex-row md:justify-between items-center"
         >
           <div class="font-bold text-2xl md:w-[40%] text-white">
-            Join you hand with us for a better life and future
+            Join your hand with us for a better life and future
           </div>
           <button
             class="self-start md:self-auto mt-6 md:mt-0 bg-orange-500 text-white font-bold text-[15px] p-3 px-8 rounded-lg"
@@ -801,9 +920,11 @@
       <!-- footer -->
 
       <footer class="bg-[#127BB9]">
-        <div class="pt-10 pb-3 mx-5 md:mx-32">
+        <div
+          class="pt-10 pb-3 mx-5 sm:mx-24 smxl:mx-28 md:mx-10 mdsm:mx-16 lg:mx-32"
+        >
           <div
-            class="mb-6 flex flex-col md:flex-row justify-between mx-auto gap-4"
+            class="mb-6 flex flex-wrap lg:flex-row justify-between mx-auto gap-4"
           >
             <span class="w-80">
               <div class="pr-8 flex gap-1 items-center">
